@@ -1,0 +1,98 @@
+---
+title: "Curso de R"
+subtitle: "Sesión 1"
+author: "Dan Jinich"
+date: "2/26/2020"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+- https://github.com/danjinich/Curso-R 
+- dan@jinich.com.mx
+
+## ¿Qué es R?
+- R es un lenguaje de programación para computación estadistica.
+- Fue el lugar 17 de los lenguajes de programación más usados en el 2019 (Stak Overflow, Developer Survey Results 2019).
+- Esta escrito en C y FORTRAN.
+
+## Temas que vamos a ver opción 1:
+- Introducción de R.
+- Como limpiar bases de datos.
+- Analisis exploratorio.
+- Graficas.
+- Regresiones.
+- Pruebas de hipotesis.
+
+## Temas que vamos a ver opción 2:
+- Introducción de R.
+- Como limpiar bases de datos.
+- Analisis exploratorio.
+- Graficas.
+- Modelos predictivos (incluye regresione).
+
+## Instalar R
+- Buscar en Google "download r" y luego el nombre de tu sistema operativo.
+- Busca en la pagina que llegues donde descargar.
+- Para Mac asegurate de descargar la versión apropiada para la version de Mac OS X que tengas.
+- Para Windows y Mac, abre el instalador y sigue las instrucciones que te da. 
+- En caso de usar Ubuntu desde la terminal puedes escribir:
+
+```{}
+$ sudo apt-get install r-base
+```
+
+## Probar que funcione
+- Abrir R.
+- En la terminal escribir:
+```{r Prueba, echo=TRUE}
+2+2
+```
+- Revisar que esta sea la respuesta y que no haya ningun mensaje de error.
+
+## Instalar RStudio
+- Ve a https://rstudio.com/products/rstudio/
+- Busca la version para escritorio gratuita.
+- Descarga la versión apropiada para tu sistema operativo.
+- Sigue las instrucciones del instalador.
+
+## Paquetes
+- Los paquetes o bibliotecas son documentos de codigo con funciones utiles.
+- Hay cosas que R no tiene funciones para hacer, pero si importas el paquete correcto son faciles de hacer.
+- El 75% de programar en R es conocer los paquetes correctos y saber usarlos.
+- En el curso vamos a necesitar principalmente Tidyverse.
+  - ggplot2
+  - dplyr
+  - tydr
+  - readr
+
+## Instalar e importar paquetes:
+- Corre estos comandos:
+```{r tidy, echo=TRUE, eval=FALSE}
+install.packages("tidyverse")
+library(tidyverse)
+```
+- install.packages(): sirve para instalar bibliotecas, en este caso todas las que estan contenidas en Tidyverse 
+- library() sirve para importar un paquete a tu ambiente de ejecucion.
+
+## Ejemplos del lenguaje
+- Las variables se declaran con <-
+```{r declare, echo=TRUE}
+a<-1
+a
+```
+- Los vectores son una de las estructura de datos basicas, son basicamente listas de un solo tipo de variables, con primer elemento siendo el 1
+```{r vectores, echo=TRUE}
+a<-c(1, 2, 3, 4, 5)
+a
+a[1]
+```
+## Links importantes
+- Descargar R windows: https://cran.r-project.org/bin/windows/base/
+- Descargar R Mac: https://cran.r-project.org/bin/macosx/
+
+## Fuentes
+- https://insights.stackoverflow.com/survey/2019#technology
+
